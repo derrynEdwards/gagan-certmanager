@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: <certname>
+spec:
+  secretName: <secret_name>
+  duration: 2160h
+  renewBefore: 360h
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+  issuerRef:
+    name: <issuer_namne>
+    kind: ClusterIssuer
+  dnsNames:
+  - <domain_name>
+  - <wildcart_domain_name>
