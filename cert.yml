@@ -15,4 +15,4 @@ spec:
     kind: ClusterIssuer
   dnsNames:
   - <domain_name>
-  - <wildcart_domain_name>
+  - <wildcard_domain_name>
